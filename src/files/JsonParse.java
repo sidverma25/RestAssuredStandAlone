@@ -6,7 +6,7 @@ public class JsonParse {
 
 	public static void main(String[] args) {
 		
-		JsonPath jp = new JsonPath(payload.complexJson());
+		JsonPath jp = new JsonPath(Payload.complexJson());
 		//1. Print No of courses returned by API
 		System.out.println(jp.getInt("courses.size()"));
 		

@@ -2,7 +2,7 @@ package files;
 
 import io.restassured.path.json.JsonPath;
 
-public class ReusableCode {
+public class Utilities {
 	
 	public static String getParameterFromResponse(String reponse,String key)
 	{

@@ -1,6 +1,6 @@
 package files;
 
-public class payload {
+public class Payload {
 
 	public static String body() {
 		return "{\r\n"
@@ -61,6 +61,22 @@ public class payload {
 	public static String deleteBook(String id) {
 		String json = "{\r\n"
 				+ "\"ID\" : \""+id+"\" \r\n"
+				+ "}";
+		return json;
+	}
+	
+	public static String createIssue(String name) {
+		String json = "{\r\n"
+				+ "    \"fields\": {\r\n"
+				+ "       \"project\":\r\n"
+				+ "       {\r\n"
+				+ "          \"key\": \"SCRUM\"\r\n"
+				+ "       },\r\n"
+				+ "       \"summary\": \""+name+"\",\r\n"
+				+ "       \"issuetype\": {\r\n"
+				+ "          \"name\": \"Bug\"\r\n"
+				+ "       }\r\n"
+				+ "   }\r\n"
 				+ "}";
 		return json;
 	}
